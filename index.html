@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<div>
+    <div class="container">
+        <div class="left">
+            <div class="img">
+                <img src="">
+            </div>
+            <div type="button" class="brn btn-1" type="button">
+                Create
+            </div>
+            <div class="cut-line"></div>
+
+            <div class="items">
+                <div class="item" onclick="location.href='#'">Item1</div>
+                <div class="item" onclick="location.href='#'">Item2</div>
+                <div class="item" onclick="location.href='#'">Item3</div>
+                <div class="item" onclick="location.href='#'">Item4</div>
+                <div class="item" onclick="location.href='#'">Item5</div>
+                <div class="item" onclick="location.href='#'">Item6</div>
+                <div class="item" onclick="location.href='#'">Item7</div>
+                <div class="item" onclick="location.href='#'">Item8</div>
+                <div class="item" onclick="location.href='#'">Item9</div>
+                <% for (int i = 1; i < 9; i ++) { %>
+                <div class="item" onclick="location.href='#'">Item<%out.print(i);%></div>
+                <% } %>
+            </div>
+
+
+        </div>
+        <div class="right">
+            <div class="text-create">Create Event</div>
+            <div class="line-right-1"></div>
+            <div class="event-name">
+                <p>Event Name:</p><input type="text" style="width: 800px;">
+            </div>
+            <div class="event-name">
+                <p>Event Time:</p>
+                <input type="text" style="width: 800px;">
+            </div>
+            <div class="event-name">
+                <p>Event detial:</p>
+                <textarea type="text" style="width: 800px; height: 100px; "> </textarea>
+            </div>
+
+            <div class="line-right-2"></div>
+
+            <div class="btn-cancel">Cancel</div>
+            <div class="btn-send">Save</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
